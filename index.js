@@ -61,4 +61,4 @@ function handleUsersResponse(response){
         readline.close();
     }
 }
-readline.question("Please choise either Rock, Paper or Scissors!\n", handleUsersResponse);
+readline.question("Please choice either Rock, Paper or Scissors!\n", handleUsersResponse);
