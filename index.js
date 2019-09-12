@@ -6,12 +6,12 @@ const readline = require("readline").createInterface({
 function handleUsersResponse(response){
     var compChoice = Math.round(Math.random()*2)+1;
     if(response.toUpperCase() === 'ROCK'){
-        if (compChoice === 1){
+        if(compChoice === 1){
             console.log("Your choice: "+response+"\nComputer choice: Rock");
             console.log("We have a Draw!");
             readline.close();
         }
-        else if (compChoice === 2){
+        else if(compChoice === 2){
             console.log("Your choice: "+response+"\nComputer choice: Paper");
             console.log("Oh no, you LOSE!");
             readline.close();
@@ -23,7 +23,7 @@ function handleUsersResponse(response){
         }
     }
     else if(response.toUpperCase() === 'PAPER'){
-        if (compChoice === 1){
+        if(compChoice === 1){
             console.log("Your choice: "+response+"\nComputer choice: Rock");
             console.log("Congratulations, You WIN!");
             readline.close();
@@ -40,21 +40,21 @@ function handleUsersResponse(response){
         }
     }
     else if(response.toUpperCase() === 'SCISSORS'){
-         if(compChoice === 1){
+        if(compChoice === 1){
             console.log("Your choice: "+response+"\nComputer choice: Rock");
             console.log("Oh no, you LOSE!");
             readline.close();
-         }
-         else if(compChoice === 2){
+        }
+        else if(compChoice === 2){
             console.log("Your choice: "+response+"\nComputer choice: Paper");
             console.log("Congratulations, You WIN!");
             readline.close();
-         }
-         else{
+        }
+        else{
             console.log("Your choice: "+response+"\nComputer choice: Scissors");
             console.log("We have a Draw!");
             readline.close();
-         }
+        }
     }
     else{
         console.log("Incorrect choice, please try again!");
